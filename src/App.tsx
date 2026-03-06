@@ -21,20 +21,13 @@ export default function App() {
   return (
     <div className="bg-gray-50 font-sans text-gray-800 overflow-x-hidden">
       <header className="bg-[#182841] py-8 md:py-12 shadow-md">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 px-4">
-            <img
-                src="/profile.jpg"
-                alt="Ana Carolina Lauretino"
-                className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-gray-400 object-cover shadow-lg"
-            />
-            <div className="text-center md:text-left">
-                <h1 className="text-4xl md:text-6xl text-gray-300" style={{ fontFamily: '"Playfair Display", serif' }}>
-                    StylingCarol
-                </h1>
-                <p className="text-2xl md:text-4xl text-gray-300 mt-2" style={{ fontFamily: '"Great Vibes", cursive' }}>
-                    By Ana Carolina Lauretino
-                </p>
-            </div>
+        <div className="container mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-6xl text-gray-300" style={{ fontFamily: '"Playfair Display", serif' }}>
+                StylingCarol
+            </h1>
+            <p className="text-2xl md:text-4xl text-gray-300 mt-2" style={{ fontFamily: '"Great Vibes", cursive' }}>
+                By Ana Carolina Lauretino
+            </p>
         </div>
       </header>
 
@@ -61,15 +54,13 @@ export default function App() {
 
         <motion.section
           {...motionProps}
-          className="my-16 flex flex-col md:flex-row items-center gap-12"
+          className="my-16 flex flex-col items-center text-center max-w-3xl mx-auto"
         >
-          <img
-            src="/ebook.jpg"
-            alt="Capa do E-Book"
-            className="w-72 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
-          />
           <div className="flex-1">
-            <h3 className="text-2xl font-bold text-[#182841] mb-4">
+            <div className="inline-block bg-[#182841] text-white px-8 py-3 rounded-lg text-lg font-bold mb-6 tracking-[0.2em] uppercase shadow-md">
+              NOVO E-BOOK
+            </div>
+            <h3 className="text-3xl font-bold text-[#182841] mb-6">
               Transforme seu Guarda-Roupa e Sua Vida
             </h3>
             <p className="text-lg leading-relaxed">
