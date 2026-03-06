@@ -10,9 +10,6 @@ import { motion } from 'motion/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-import profileImg from './assets/ana-carolina-profile.jpg.jpeg';
-import ebookCoverImg from './assets/ebook-cover.png.jpg';
-
 const motionProps = {
   initial: { opacity: 0, y: 50 },
   whileInView: { opacity: 1, y: 0 },
@@ -26,7 +23,7 @@ export default function App() {
       <header className="bg-[#182841] py-8 md:py-12 shadow-md">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 px-4">
             <img
-                src={profileImg}
+                src="/profile.jpg"
                 alt="Ana Carolina Lauretino"
                 className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-gray-400 object-cover shadow-lg"
             />
@@ -67,7 +64,7 @@ export default function App() {
           className="my-16 flex flex-col md:flex-row items-center gap-12"
         >
           <img
-            src={ebookCoverImg}
+            src="/ebook.jpg"
             alt="Capa do E-Book"
             className="w-72 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
           />
